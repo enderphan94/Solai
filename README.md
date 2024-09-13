@@ -26,14 +26,7 @@ Ensure you have the following installed on your system:
 
 ### macOS
 
-1. Clone this repository:
-
-    ```sh
-    git clone https://github.com/yourusername/solidity-auditor.git
-    cd solidity-auditor
-    ```
-
-2. Run the installation script for macOS:
+Run the installation script for macOS:
 
     ```sh
     chmod +x install_tools_macos.sh
@@ -42,14 +35,7 @@ Ensure you have the following installed on your system:
 
 ### Ubuntu
 
-1. Clone this repository:
-
-    ```sh
-    git clone https://github.com/yourusername/solidity-auditor.git
-    cd solidity-auditor
-    ```
-
-2. Run the installation script for Ubuntu:
+Run the installation script for Ubuntu:
 
     ```sh
     chmod +x install_tools_ubuntu.sh
@@ -64,3 +50,31 @@ Update the `OPENAI_API_KEY` value in `main.py` with your OpenAI API key:
 # Set up your OpenAI API key
 OPENAI_API_KEY = "your_openai_api_key_here"
 openai.api_key = OPENAI_API_KEY
+```
+
+## Usage
+
+```
+python3 main.py path/to/your/contract.sol
+```
+
+## Result Intepretation
+
+Viewing the Results
+
+1. Output File: The results of the audit will be saved in a JSON file named final_audit_results.json in the current directory.
+2. Example Structure:
+
+```
+[
+    {
+        "Issue name": "Reentrancy Vulnerability",
+        "Severity level": "High",
+        "Impact of the vulnerability": "Allows attacker to drain funds",
+        "The vulnerable code snippet": "...",
+        "Mitigation solution": "Use checks-effects-interactions pattern"
+    },
+    ...
+]
+
+```
