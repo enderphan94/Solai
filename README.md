@@ -4,6 +4,8 @@ This repository contains a Solidity smart contract auditing script that utilizes
 
 ## Features
 
+![Alt text](https://imgur.com/a/X3TEkiL)
+
 - **Solidity Version Management**: Automatically detects and uses the appropriate Solidity compiler version.
 - **Code Flattening**: Flattens Solidity contracts for analysis.
 - **Static Analysis**: Uses `Slither`  to analyze smart contract security.
@@ -58,7 +60,7 @@ openai.api_key = OPENAI_API_KEY
 python3 Solai.py path/to/your/contract.sol
 ```
 
-## Result Intepretation
+## Result Interpretation
 
 Viewing the Results
 
