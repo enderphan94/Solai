@@ -55,7 +55,7 @@ openai.api_key = OPENAI_API_KEY
 ## Usage
 
 ```
-python3 main.py path/to/your/contract.sol
+python3 Solai.py path/to/your/contract.sol
 ```
 
 ## Result Intepretation
