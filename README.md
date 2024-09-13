@@ -4,7 +4,8 @@ This repository contains a Solidity smart contract auditing script that utilizes
 
 ## Features
 
-![Alt text](https://imgur.com/a/X3TEkiL)
+
+![Imgur](https://imgur.com/a/X3TEkiL))
 
 - **Solidity Version Management**: Automatically detects and uses the appropriate Solidity compiler version.
 - **Code Flattening**: Flattens Solidity contracts for analysis.
